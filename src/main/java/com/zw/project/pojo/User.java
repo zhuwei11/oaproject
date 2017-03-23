@@ -22,6 +22,14 @@ public class User implements Serializable{
 	public User() {
 		super();
 	}
+	
+	public User(String loginname, String password, String username) {
+		super();
+		this.loginname = loginname;
+		this.password = password;
+		this.username = username;
+	}
+
 	// set/get方法
 	public String getLoginname() {
 		return loginname;
