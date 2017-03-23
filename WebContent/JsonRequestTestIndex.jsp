@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>测试接收JSON格式的数据</title>
-<script type="text/javascript" src="resources/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="resources/js/json2.js"></script>
+<script type="text/javascript" src="resource/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="resource/js/json2.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	testRequestBody();

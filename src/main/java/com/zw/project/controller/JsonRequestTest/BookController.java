@@ -4,7 +4,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,7 +32,7 @@ public class BookController {
     	JSONObject mapper = (JSONObject) JSONObject.toJSON(book);
     	// 将book对象转换成json输出
     	logger.info(mapper);
-    	book.setAuthor("肖文吉");
+    	mapper.put("author", "肖文吉");
     	response.setContentType("text/html;charset=UTF-8");
     	// 将book对象转换成json写出到客户端
     	response.getWriter().println(mapper.toString());
